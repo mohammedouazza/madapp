@@ -14,7 +14,7 @@ const logoStyle = {
   backgroundSize: "30px",
 };
 const HeaderComponent = () => {
-  const [mobileHeader, setMobileHeader] = useState(false);
+  const [mobileHeader, setMobileHeader] = useState(window.innerWidth < 800);
   const [drawerVisible, setDrawerVisible] = useState(false);
   const toggleDrawer = () => {
     setDrawerVisible(!drawerVisible);
